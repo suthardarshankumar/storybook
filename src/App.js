@@ -1,11 +1,15 @@
+import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Home from './Pages/Home/Home';
 
-function App() {
+const App = () => {
   return (
     <>
-
+      <Navbar />
+      <Home />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

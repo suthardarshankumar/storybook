@@ -1,0 +1,117 @@
+.navbar {
+    width: 100vw;
+    background-color: #0e0c2c;
+    /* background-color: azure; */
+    padding: 20px 179px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff20;
+}
+
+.innerNavbar {
+    display: flex;
+    align-items: center;
+    width: 640px;
+}
+
+.logoSection {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    margin-right: 24px;
+    border-radius: 5px;
+}
+
+.logoSection:hover {
+    outline: 2.5px solid #029cfd;
+}
+
+.logo {
+    width: 16px;
+    height: 18px;
+    margin-right: 7px;
+}
+
+.logoHeading {
+    font-size: 16px;
+}
+
+.links {
+    padding: 6px 8px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.links:hover {
+    background-color: #ffffff20;
+    border-radius: 5px;
+}
+
+.arrowIcon {
+    font-weight: 200;
+    margin-left: 5px;
+    font-size: 11px;
+    transform: translateY(-3px);
+}
+
+.rightNavbar {
+    display: flex;
+    align-items: center;
+}
+
+.otherLink {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 25px;
+    margin-left: 15px;
+    border: 1px solid #ffffff20;
+}
+
+.githubNum {
+    margin-left: 12px;
+}
+
+.search {
+    margin-left: 6px;
+}
+
+.githubNum {
+    font-size: 12px;
+}
+
+.search {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.search {
+    margin-right: 12px;
+}
+
+.githubIcon,
+.searchIcon {
+    font-size: 14px;
+}
+
+.iconContain {
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #ffffff20;
+    padding: 2.5px 5px;
+    margin-left: 5px;
+}
+
+.commandIcon,
+.KIcon {
+    font-size: 10px;
+}
