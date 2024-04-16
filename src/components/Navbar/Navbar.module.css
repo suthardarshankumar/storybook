@@ -5,9 +5,9 @@
 }
 
 .mainNavbar {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100vw;
     background-color: transparent;
     padding: 19px 179px;
@@ -155,6 +155,7 @@
     position: absolute;
     top: -290px;
     left: 120px;
+    /* translate: 120px -380px; */
     z-index: 0;
     height: 650px;
     width: 1120px;
