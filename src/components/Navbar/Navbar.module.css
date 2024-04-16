@@ -1,17 +1,27 @@
 .navbar {
-    width: 100vw;
+    position: relative;
+    z-index: 0;
     background-color: #0e0c2c;
-    /* background-color: azure; */
-    padding: 20px 179px;
+}
+
+.mainNavbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: transparent;
+    padding: 19px 179px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ffffff20;
+    z-index: 10;
 }
 
 .innerNavbar {
     display: flex;
     align-items: center;
     width: 640px;
+    z-index: 10;
 }
 
 .logoSection {
@@ -22,20 +32,25 @@
     padding: 6px 8px;
     margin-right: 24px;
     border-radius: 5px;
+    z-index: 10;
 }
 
 .logoSection:hover {
     outline: 2.5px solid #029cfd;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .logo {
     width: 16px;
     height: 18px;
     margin-right: 7px;
+    z-index: 10;
 }
 
 .logoHeading {
     font-size: 16px;
+    z-index: 10;
 }
 
 .links {
@@ -45,11 +60,14 @@
     font-size: 14px;
     color: #fff;
     margin-right: 10px;
+    z-index: 10;
 }
 
 .links:hover {
     background-color: #ffffff20;
     border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .arrowIcon {
@@ -57,11 +75,13 @@
     margin-left: 5px;
     font-size: 11px;
     transform: translateY(-3px);
+    z-index: 10;
 }
 
 .rightNavbar {
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 .otherLink {
@@ -72,34 +92,46 @@
     align-items: center;
     padding: 6px 12px;
     border-radius: 25px;
-    margin-left: 15px;
+    margin-left: 11px;
     border: 1px solid #ffffff20;
+    z-index: 10;
+}
+
+.otherLink:hover {
+    cursor: pointer;
+    z-index: 10;
 }
 
 .githubNum {
     margin-left: 12px;
+    z-index: 10;
 }
 
 .search {
     margin-left: 6px;
+    z-index: 10;
 }
 
 .githubNum {
     font-size: 12px;
+    z-index: 10;
 }
 
 .search {
     font-size: 13px;
     font-weight: 200;
+    z-index: 10;
 }
 
 .search {
     margin-right: 12px;
+    z-index: 10;
 }
 
 .githubIcon,
 .searchIcon {
     font-size: 14px;
+    z-index: 10;
 }
 
 .iconContain {
@@ -109,9 +141,28 @@
     background-color: #ffffff20;
     padding: 2.5px 5px;
     margin-left: 5px;
+    margin-right: 2px;
+    z-index: 10;
 }
 
 .commandIcon,
 .KIcon {
     font-size: 10px;
+    z-index: 10;
+}
+
+.square {
+    position: absolute;
+    top: -290px;
+    left: 120px;
+    z-index: 0;
+    height: 650px;
+    width: 1120px;
+    transform: rotate(-25deg);
+    border-radius: 20px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 10%;
+    background: linear-gradient(120deg, #ff4281a6 30%, #ff4785 55%, #ff4400b9 100%);
+    filter: blur(60px);
 }
