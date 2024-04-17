@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './LandingPage.module.css';
 import { RiFileCopyLine } from "react-icons/ri";
 import { GiStarShuriken } from "react-icons/gi";
+import storybookFrame from '../../../assests/Img/Home/Animations/storybook-frame.svg';
+import sidebartfnoselection from '../../../assests/Img/Home/Animations/sidebar-tf-no-selection.svg';
 
 const LandingPage = () => {
     return (
@@ -47,7 +49,15 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.animationContainer}>
+                    <img src={storybookFrame} alt='' className={styles.storybookFrame} />
+                    <div className={styles.sideBar}></div>
+                    <div className={styles.timeFrameControl}></div>
+                    <div className={styles.timeFrame}></div>
+                    <div className={styles.cursor}></div>
+                </div>
             </div>
+
         </>
     )
 }

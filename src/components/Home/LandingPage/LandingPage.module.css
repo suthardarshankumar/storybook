@@ -10,6 +10,7 @@
 .detailsSection {
     width: 100%;
     /* z-index: 90; */
+    margin-bottom: 25px;
 }
 
 .heading {
@@ -186,5 +187,356 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.animationContainer {
+    width: 100%;
+    height: 830px;
+    position: relative;
+}
+
+.storybookFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.sideBar {
+    position: absolute;
+    background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-no-selection.svg');
+    background-repeat: no-repeat;
+    background-size: 227px 718px;
+    top: 70px;
+    left: 0;
+    width: 227px;
+    height: 718px;
+    z-index: 10;
+    animation-name: sideBarAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.timeFrameControl {
+    position: absolute;
+    background-image: url('/src/assests/Img/Home/Animations/time-frame-controls.svg');
+    background-repeat: no-repeat;
+    background-size: 1080px 718px;
+    bottom: 42px;
+    /* left: -30px; */
+    z-index: 13;
+    width: 1080px;
+    height: 718px;
+    animation-name: timeFrameControlAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.timeFrame {
+    position: absolute;
+    background-image: url('/src/assests/Img/Home/Animations/time-frame-no-selection.svg');
+    background-repeat: no-repeat;
+    background-size: 450px 350px;
+    top: 120px;
+    left: 430px;
+    z-index: 13;
+    width: 1080px;
+    height: 718px;
+    animation-name: timeFrameAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.cursor {
+    position: absolute;
+    bottom: -60px;
+    right: 450px;
+    width: 70px;
+    height: 70px;
+    background-image: url('/src/assests/Img/Home/Animations/pointer.svg');
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    z-index: 13;
+    animation-name: cursorAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes timeFrameControlAnimation {
+    0% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-controls.svg');
+    }
+
+    90% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-controls.svg');
+    }
+
+    92% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-controls.svg');
+    }
+
+    94% {
+        background-image: url('');
+    }
+
+    98% {
+        background-image: url('');
+    }
+
+    99% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-controls.svg');
+    }
+
+    100% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-controls.svg');
+    }
+}
+
+@keyframes sideBarAnimation {
+    0% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-no-selection.svg');
+    }
+
+    6% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-no-selection.svg');
+    }
+
+    9% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-no-selection.svg');
+    }
+
+    12% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-last-hour.svg');
+    }
+
+    18% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-last-hour.svg');
+    }
+
+    22% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-last-hour.svg');
+    }
+
+    24% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-all-day.svg');
+    }
+
+    84% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-all-day.svg');
+    }
+
+    92% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-all-day.svg');
+    }
+
+    94% {
+        background-image: url('/src//assests/Img/Home/Animations/sidebar-tf-overview.svg');
+    }
+
+    98% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-overview.svg');
+    }
+
+    99% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-no-selection.svg');
+    }
+
+    100% {
+        background-image: url('/src/assests/Img/Home/Animations/sidebar-tf-no-selection.svg');
+    }
+}
+
+@keyframes timeFrameAnimation {
+    0% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-no-selection.svg');
+        background-size: 450px 350px;
+        top: 120px;
+        left: 430px;
+    }
+
+    9% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-no-selection.svg');
+    }
+
+    12% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-last-hour.svg');
+    }
+
+    22% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-last-hour.svg');
+    }
+
+    24% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-all-day.svg');
+    }
+
+    84% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-all-day.svg');
+    }
+
+    92% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-all-day.svg');
+        background-size: 450px 350px;
+        top: 120px;
+        left: 430px;
+    }
+
+    94% {
+        background-image: url('/src//assests/Img/Home/Animations/time-frame-overview.svg');
+        background-size: 853px 718px;
+        top: 70px;
+        left: 227px;
+    }
+
+    98% {
+        background-image: url('/src//assests/Img/Home/Animations/time-frame-overview.svg');
+        background-size: 853px 718px;
+        top: 70px;
+        left: 227px;
+    }
+
+    99% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-no-selection.svg');
+        background-size: 450px 350px;
+        top: 120px;
+        left: 430px;
+    }
+
+    100% {
+        background-image: url('/src/assests/Img/Home/Animations/time-frame-no-selection.svg');
+        background-size: 450px 350px;
+        top: 120px;
+        left: 430px;
+    }
+}
+
+@keyframes cursorAnimation {
+    0% {
+        bottom: -60px;
+        right: 450px;
+    }
+
+    6% {
+        bottom: 270px;
+        right: 850px;
+        transform: scale(1);
+    }
+
+    9% {
+        transform: scale(0.85);
+        bottom: 270px;
+        right: 850px;
+    }
+
+    12% {
+        transform: scale(1);
+        bottom: 270px;
+        right: 860px;
+    }
+
+    15% {
+        transform: scale(1);
+        bottom: 270px;
+        right: 860px;
+    }
+
+    18% {
+        bottom: 250px;
+        right: 850px;
+        transform: scale(1);
+    }
+
+    21% {
+        transform: scale(0.85);
+    }
+
+    24% {
+        transform: scale(1);
+    }
+
+    27% {
+        bottom: 250px;
+        right: 850px;
+    }
+
+    36% {
+        right: 100px;
+        bottom: 115px;
+        transform: scale(1);
+    }
+
+    38% {
+        transform: scale(0.85);
+    }
+
+    41% {
+        transform: scale(0.85);
+    }
+
+    44% {
+        transform: scale(1);
+    }
+
+    48% {
+        transform: scale(1);
+        right: 100px;
+        bottom: 115px;
+    }
+
+    54% {
+        right: 100px;
+        bottom: 65px;
+        transform: scale(1);
+    }
+
+    57% {
+        transform: scale(0.85);
+    }
+
+    60% {
+        transform: scale(1);
+        right: 100px;
+        bottom: 65px;
+    }
+
+    84% {
+        right: 100px;
+        bottom: 65px;
+    }
+
+    90% {
+        bottom: 315px;
+        right: 850px;
+        transform: scale(1);
+    }
+
+    92% {
+        transform: scale(0.85);
+    }
+
+    94% {
+        transform: scale(1);
+        bottom: 315px;
+        right: 850px;
+    }
+
+    97% {
+        bottom: 295px;
+        right: 850px;
+        transform: scale(1);
+    }
+
+    98.5% {
+        transform: scale(0.85);
+    }
+
+    99.25% {
+        transform: scale(1);
+        bottom: 295px;
+        right: 850px;
+    }
+
+    100% {
+        bottom: -60px;
+        right: 450px;
     }
 }
