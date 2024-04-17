@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './LandingPage.module.css';
 import { RiFileCopyLine } from "react-icons/ri";
 import { GiStarShuriken } from "react-icons/gi";
 import storybookFrame from '../../../assests/Img/Home/Animations/storybook-frame.svg';
-import sidebartfnoselection from '../../../assests/Img/Home/Animations/sidebar-tf-no-selection.svg';
 
 const LandingPage = () => {
+    const [scrollTopValue, setScrollTopValue] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollTopValue(window.scrollY);
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, []);
+
+    const activeAnimation = 375;
+    const animationStart = scrollTopValue >= activeAnimation;
+
     return (
         <>
             <div className={`${styles['container']}`}>
@@ -51,10 +66,10 @@ const LandingPage = () => {
                 </div>
                 <div className={styles.animationContainer}>
                     <img src={storybookFrame} alt='' className={styles.storybookFrame} />
-                    <div className={styles.sideBar}></div>
-                    <div className={styles.timeFrameControl}></div>
-                    <div className={styles.timeFrame}></div>
-                    <div className={styles.cursor}></div>
+                    <div className={`${styles.sideBar} ${animationStart ? styles.sideBarAnimatioon : styles.nothing}`}></div>
+                    <div className={`${styles.timeFrameControl} ${animationStart ? styles.timeFrameControlAnimation : styles.nothing}`}></div>
+                    <div className={`${styles.timeFrame} ${animationStart ? styles.timeFrameAnimation : styles.nothing}`}></div>
+                    <div className={`${styles.cursor} ${animationStart ? styles.cursorAnimation : styles.nothing}`}></div>
                 </div>
             </div>
 
