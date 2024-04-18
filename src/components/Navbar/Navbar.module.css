@@ -153,17 +153,29 @@
 
 .square {
     position: absolute;
-    top: -290px;
-    left: 120px;
+    top: -750px;
+    left: 50px;
     /* translate: 120px -380px; */
     z-index: 0;
-    height: 650px;
-    width: 1120px;
-    transform: rotate(-25deg);
-    border-radius: 20px;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 10%;
-    background: linear-gradient(120deg, #ff4281a6 30%, #ff4785 55%, #ff4400b9 100%);
+    height: 1100px;
+    width: 1350px;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    background: linear-gradient(120deg, #ff4281a6 30%, #ff4785 57%, #ff4400b9 100%);
     filter: blur(60px);
+}
+
+.blueCircle {
+    position: absolute;
+    top: 240px;
+    right: -420px;
+    /* translate: 120px -380px; */
+    z-index: 0;
+    height: 1200px;
+    width: 1350px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,
+            rgb(59, 79, 135) 0%,
+            rgb(36, 83, 159) 100%);
+    filter: blur(70px);
 }

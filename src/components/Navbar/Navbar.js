@@ -52,6 +52,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className={styles.square}></div>
+                <div className={styles.blueCircle}></div>
             </nav>
         </>
     )

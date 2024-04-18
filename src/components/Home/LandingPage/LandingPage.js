@@ -3,6 +3,13 @@ import styles from './LandingPage.module.css';
 import { RiFileCopyLine } from "react-icons/ri";
 import { GiStarShuriken } from "react-icons/gi";
 import storybookFrame from '../../../assests/Img/Home/Animations/storybook-frame.svg';
+import vscodeLogo from '../../../assests/logo/logo-vscode.svg';
+import euLogo from '../../../assests/logo/logo-eu.svg';
+import githubLogo from '../../../assests/logo/logo-github.svg';
+import airbusLogo from '../../../assests/logo/logo-airbnb.svg';
+import mozillaLogo from '../../../assests/logo/logo-mozilla.svg';
+import mondayLogo from '../../../assests/logo/logo-monday.svg';
+import bbcLogo from '../../../assests/logo/logo-bbc.svg';
 
 const LandingPage = () => {
     const [scrollTopValue, setScrollTopValue] = useState(0);
@@ -18,9 +25,9 @@ const LandingPage = () => {
         }
     }, []);
 
-    const activeAnimation = 375;
-    const animationStart = scrollTopValue >= activeAnimation;
-
+    const activeAnimationStart = 375;
+    const activeAnimationEnd = 1700;
+    const activeAnimation = scrollTopValue >= activeAnimationStart && scrollTopValue <= activeAnimationEnd;
     return (
         <>
             <div className={`${styles['container']}`}>
@@ -66,10 +73,19 @@ const LandingPage = () => {
                 </div>
                 <div className={styles.animationContainer}>
                     <img src={storybookFrame} alt='' className={styles.storybookFrame} />
-                    <div className={`${styles.sideBar} ${animationStart ? styles.sideBarAnimatioon : styles.nothing}`}></div>
-                    <div className={`${styles.timeFrameControl} ${animationStart ? styles.timeFrameControlAnimation : styles.nothing}`}></div>
-                    <div className={`${styles.timeFrame} ${animationStart ? styles.timeFrameAnimation : styles.nothing}`}></div>
-                    <div className={`${styles.cursor} ${animationStart ? styles.cursorAnimation : styles.nothing}`}></div>
+                    <div className={`${styles.sideBar} ${activeAnimation ? styles.sideBarAnimatioon : styles.nothing}`}></div>
+                    <div className={`${styles.timeFrameControl} ${activeAnimation ? styles.timeFrameControlAnimation : styles.nothing}`}></div>
+                    <div className={`${styles.timeFrame} ${activeAnimation ? styles.timeFrameAnimation : styles.nothing}`}></div>
+                    <div className={`${styles.cursor} ${activeAnimation ? styles.cursorAnimation : styles.nothing}`}></div>
+                </div>
+                <div className={styles.logoContainer}>
+                    <img src={vscodeLogo} alt='' className={styles.vscodeLogo} />
+                    <img src={euLogo} alt='' className={styles.euLogo} />
+                    <img src={githubLogo} alt='' className={styles.githubLogo} />
+                    <img src={airbusLogo} alt='' className={styles.airbusLogo} />
+                    <img src={mozillaLogo} alt='' className={styles.mozillaLogo} />
+                    <img src={mondayLogo} alt='' className={styles.mondayLogo} />
+                    <img src={bbcLogo} alt='' className={styles.bbcLogo} />
                 </div>
             </div>
 
